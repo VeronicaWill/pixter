@@ -1,16 +1,24 @@
-<div class="private-square span4 text-center">
   
-  <h1>Upload your Image</h1>
-  <br/>
   <%= simple_form_for @post do |f| %>
-  <%= f.input :title, placeholder: 'eg. puppies' %>
+<div class="private-square span4 text-center">
+  <h1>Upload your Image</h1>
+
+  <br/>
+
+  <%= f.input :title, placeholder: 'eg. Boo Boo' %>
 </div>
 <div class="clr">
 </div>
 <br />
 <div class="private-square span4 text-center">
-  <%= f.input :description, placeholder: 'eg. puppies are adorable' %>
-  
+  <%= f.input :description, placeholder: 'eg. My new puppy' %>
+</div>
+  <div class="clr">
+</div>
+<br />
+  <div class="private-square span4 text-center">
+  <%= f.input :image %>
+  <br />
   
   <%= f.button :submit, :class => 'btn btn-success' %>
   </div>
